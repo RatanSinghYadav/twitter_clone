@@ -1,0 +1,91 @@
+.searchBox{
+    background-color: rgb(239,243,244);
+    border-radius: 25px;
+    border: none;
+    margin-top: 5px;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    justify-content: left;
+    padding: 6px 0px 6px 15px;
+}
+.search{
+    border: none;
+    background-color: rgb(239,243,244);
+}
+.search:focus{
+    outline: none;
+}
+.searchBox:hover{
+    border: 1px solid rgb(29, 155, 240);
+    background-color: white;
+}
+.search:hover{
+    background-color: white;
+}
+
+.trendsBar{
+    background-color: rgb(239,243,244);
+    border-radius: 25px;
+    border: none;
+    margin-top: 10px;
+    text-align: left;
+    padding: 1rem 0rem 1rem 2rem;
+}
+.box-1{
+    display: flex;
+    justify-content: space-between;
+}
+.box-2{
+    margin-top: 10px;
+}
+.showMore{
+    font-size: 20px;
+    margin-top: 10px;
+    color: rgb(29, 155, 240);
+    font-weight: 700;
+}
+
+/* who to follow section */
+
+.whoTofollow{
+    background-color: rgb(239,243,244);
+    border-radius: 25px;
+    border: none;
+    margin-top: 10px;
+    text-align: left;
+    padding: 1rem 0rem 1rem 2rem;
+}
+.nyTime{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.body-text-nyt{
+    display: flex;
+    flex-direction: column;
+    margin-left: -3rem;
+}
+.body-text{
+    display: flex;
+    flex-direction: column;
+    margin-left: -10rem;
+}
+
+.follow-btn{
+    border-radius: 30px;
+    background-color: black;
+    color: white;
+    padding: 2px 12px 2px 12px;
+    font-weight: 500;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+@media only screen and (max-width: 768px) {
+    .searchBox, .trendsBar ,.whoTofollow {
+        display: none;
+    }
+}
+

@@ -1,0 +1,61 @@
+/* body{
+    margin-top: 10px;
+} */
+
+.main-container-row {
+   text-align: center;
+}
+
+.col-rightbar {
+   border-right: 1px solid lightgrey;
+   /* width: 20.666667%; */
+}
+
+.col-leftbar {
+   /* border: 1px solid rgb(38, 0, 255); */
+}
+
+.col-feed {
+   /* border: 1px solid rgb(25, 216, 0); */
+   border-right: 1px solid lightgrey;
+
+}
+
+
+.navbarMainBox {
+   display: flex;
+   justify-content: space-around;
+   background-color: rgb(29, 155, 240);
+   align-items: center;
+}
+
+.navbarLogin {
+   background-color: rgb(29, 155, 240);
+    color: white;
+    padding: 2px 12px 3px 12px;
+    font-weight: 500;
+    width: 5rem;
+    border-radius: 1rem;
+    border: 1px solid rgb(173 210 225);
+}
+
+.navbarSignup {
+   border-radius: 1rem;
+    background-color: rgb(238,243,245);
+    color: black;
+    padding: 2px 12px 3px 12px;
+    font-weight: 500;
+    width: 6rem;
+    border: none;
+}
+
+.dontMiss {
+   font-size: 24px;
+   color: white;
+   font-weight: bold;
+}
+
+.bodyText {
+   font-size: 16px;
+   color: white;
+}

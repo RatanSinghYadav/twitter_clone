@@ -1,0 +1,104 @@
+.rightbar-tweet-btn {
+    background-color: rgb(29, 155, 240);
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 8px 28px;
+    outline-style: none;
+    transition-duration: 0.2s;
+    padding-left: 32px;
+    padding-right: 32px;
+    border: none !important;
+    color: white !important;
+    font-weight: 700 !important;
+    text-transform: inherit !important;
+    border-radius: 30px !important;
+    height: 50px !important;
+    margin-top: 20px !important;
+    width: 12rem;
+    margin-left: 15px;
+}
+
+.profileMain{
+    display: flex;
+    text-align: left;
+}
+
+
+.twitterIcon{
+    color: rgb(29, 155, 240);
+    margin: 0px -4px 10px -8rem;
+}
+.main-box{
+    margin-left: -1rem;
+    position:fixed;
+}
+.inner-box{
+    display: flex;
+    gap: 20px;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 10px 0px 10px 30px;
+    cursor: pointer;
+    color:black;
+}
+.inner-box:hover{
+    border: none;
+    border-radius: 1rem;
+    background-color: #50b7f5;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+}
+.profileLogout{
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0px 0px 6px;
+    cursor: pointer;
+    padding: 5px 5px 5px 5px;
+    text-align: right;
+    align-items: center;
+}
+.profileLogout:hover{
+    background-color: rgb(238, 240, 241);
+    border-radius: 2rem;
+    padding: 5px 5px 5px 5px;
+    cursor: pointer;
+}
+@media only screen and (max-width: 768px) {
+    .inner-box-text {
+        display: none;
+    }
+    .logoutOthoption{
+        display: none;
+    }
+    .profileLogout:hover{
+    background-color: white;
+     
+    }
+    .userNamehandle{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .rightbar-tweet-btn {
+        background-color: rgb(29, 155, 240);
+        box-shadow: rgba(0, 0, 0, 0.08) 0px 8px 28px;
+        outline-style: none;
+        transition-duration: 0.2s;
+        padding-left: 10px;
+        padding-right: 52px;
+        border: none !important;
+        color: white !important;
+        font-weight: 600 !important;
+        text-transform: inherit !important;
+        border-radius: 30px !important;
+        height: 35px !important;
+        width: 2rem;
+        margin-left: 8px;
+    }
+    .userNamehandle{
+        display: none;
+    }
+    
+}

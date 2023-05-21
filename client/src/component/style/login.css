@@ -1,0 +1,67 @@
+.loginBody{
+    /* background-color: rgb(245,244,245); */
+
+}
+
+.mainBox{
+    /* border: 1px solid black; */
+    margin-top: 4rem;
+    height: 22rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.signupRow{
+    /* border: 1px solid red; */
+    height: 22rem;
+    align-items: center;
+    width: 50rem;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 8px 28px;
+    background-color: rgb(245,244,245);
+    border-radius: 20px;
+
+}
+.insideBox-1{
+    background-color: rgb(29, 155, 240);
+    height: 22rem;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px 0px 0px 20px;
+}
+.twitterIn{
+    color: white;
+    margin-left: 8px;
+    font-size: 8rem;
+
+}
+.inputBox{
+    width: 25rem;
+    border: 1px solid lightgrey;
+    border-radius: 4px;
+    padding: 2px 0px 2px 5px;
+}
+.inputBox:focus{
+    outline: 1px solid rgb(29, 155, 240);
+}
+.loginBtn{
+    border-radius: 6px;
+    background-color: black;
+    color: white;
+    padding: 2px 12px 3px 12px;
+    font-weight: 500;
+    width: 5rem;
+}
+.insideBox-2{
+    /* border: 1px solid rgb(9, 110, 0); */
+    height: 22rem;
+    gap: 10px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0px 20px 20px 0px;
+    background-color: white;
+    padding-left: 2rem;
+}

@@ -1,0 +1,89 @@
+.topHeading{
+    display: flex;
+    gap: 30px;
+}
+.wallImg{
+    width: 100%;
+    height: 15rem;
+}
+.profilePic{
+    display: flex;
+    justify-content: space-between;
+    margin: -3rem 10px 0px 30px;
+}
+.profilePicOption{
+    display: flex;
+    gap: 15px;
+}
+.optionIcon{
+    border: 1px solid lightgrey;
+    border-radius: 1rem;
+    padding: 2px 4px 1px 4px;
+    cursor: pointer;
+}
+.profileImg{
+    height: 8rem;
+    border-radius: 50%;
+    display: flex;
+    margin: -4rem 0px 0rem 1rem;
+    border: 4px solid white;
+    z-index: 1;
+}
+
+.profileDisc{
+    text-align: left;
+    margin-top: 10px;
+}
+.otherInfo{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+.tweetOptions{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+    border-bottom: 1px solid lightgrey;
+}
+.tweetOpt{
+    padding: 3px 1rem 3px 1rem;
+}
+.tweetOpt:hover{
+    border: none;
+    /* padding: 3px 1rem 3px 1rem; */
+    background-color: lightgrey;
+}
+/* post section */
+
+.postBox{
+    display: flex;
+    gap: 8px;
+    margin-top: 12px;
+    border-bottom: 1px solid lightgrey;
+    margin-bottom: 2rem;
+}
+.profileData{
+    display: flex;
+    gap: 10px;
+}
+.postImg{
+    width: 50%;
+    height: 50%;
+}
+.postData{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+.postOption{
+    display: flex;
+    justify-content: space-around;
+    margin: 8px 0px 8px 0px;
+}
+@media only screen and (max-width: 768px) {
+    .col-4 ,.col-leftbar {
+        display: none;
+    }
+}
