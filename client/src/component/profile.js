@@ -170,7 +170,7 @@ function Profile() {
                           <div><span>{e.content}</span></div>
                           <div style={{ textAlign: 'center' }}>
                             {e.media && (
-                              <img className='postImg' src={`http://localhost:8000/uploads/${e.media}`} alt='post' />
+                              <img className='postImg' src={`${url}/${e.media}`} alt='post' />
                             )}
                           </div>
                         </div>
