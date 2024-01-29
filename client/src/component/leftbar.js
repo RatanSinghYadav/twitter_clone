@@ -16,7 +16,7 @@ import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer, toast } from 'react-toastify';
-
+import { url } from './constent';
 
 function Leftbar() {
 
@@ -39,7 +39,7 @@ function Leftbar() {
     const navigate = useNavigate()
 
     const logoutuser = async () => {
-        const res2 = await fetch("http://localhost:8000/logout", {
+        const res2 = await fetch(`${url}/logout`, {
             method: "GET",
             headers: {
                 Accept: "application/json",

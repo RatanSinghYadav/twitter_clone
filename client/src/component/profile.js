@@ -18,7 +18,7 @@ import { FaRetweet } from 'react-icons/fa';
 import { FiShare } from 'react-icons/fi';
 import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline';
 import { LoginContext } from './context/contextProvider';
-
+import { url } from './constent.js';
 
 function Profile() {
   const [getPost, setGetpost] = useState([]);
@@ -26,7 +26,7 @@ function Profile() {
   // all userInfo in the below account variable
 
   const postData = async () => {
-    const res1 = await axios.get("http://localhost:8000/getpost", {
+    const res1 = await axios.get(`${url}/getpost`, {
       Headers: {
         "Content-Type": "application/json"
       }
@@ -55,7 +55,7 @@ function Profile() {
     const formData = new FormData();
     formData.append("file", image);
     try {
-     const res = await axios.post("http://localhost:8000/profilePic", formData, {
+      const res = await axios.post(`${url}/profilePic`, formData, {
         headers: {
           "Content-Type": "multipart/form-data",
         },
@@ -65,7 +65,7 @@ function Profile() {
       console.log(err);
     }
   };
-  
+
 
 
 
@@ -92,8 +92,8 @@ function Profile() {
               <img src={chair} className='wallImg' alt='background wallpaper' />
               <div style={{ display: 'flex' }} >
 
-              <label htmlFor="upload-button">
-                  <img  src={image ? URL.createObjectURL(image) : img} onClick={handleUpload} className='profileImg' alt='user' />
+                <label htmlFor="upload-button">
+                  <img src={image ? URL.createObjectURL(image) : img} onClick={handleUpload} className='profileImg' alt='user' />
                 </label>
                 <input
                   type="file"

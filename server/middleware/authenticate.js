@@ -3,7 +3,7 @@ const USER  = require('../model/userScema.js')
 
 const secretKey = "abcdefghijklmnopqrstuvwxyzabcdef";
 
-const authenticate = async(req,res,next)=>{
+const authenticate = async(req,res,next)=>{ 
     try {
         
         const token = req.cookies.AmazonWeb;

@@ -17,7 +17,7 @@ import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline';
 import { FiUpload } from 'react-icons/fi';
 import VerifiedIcon from '@mui/icons-material/Verified';
 import { Link } from 'react-router-dom';
-
+import { url } from './constent';
 
 function Feed() {
     const [item, setItem] = useState({ 'data': '' })
@@ -65,7 +65,7 @@ function Feed() {
                 "Content-Type": "multipart/form-data"
             }
         }
-        const res = await axios.post("http://localhost:8000/post", formData, config);
+        const res = await axios.post(`${url}/post`, formData, config);
 
 
         setPosts((prevPosts) => [res.data, ...prevPosts]); // Add the new post to the beginning of the posts array
@@ -81,7 +81,7 @@ function Feed() {
     // all userInfo in the below account variable
 
     const getData = async () => {
-        const res1 = await axios.get("http://localhost:8000/getpost", {
+        const res1 = await axios.get(`${url}/getpost`, {
             Headers: {
                 "Content-Type": "application/json"
             }
@@ -129,7 +129,7 @@ function Feed() {
                             <label htmlFor="upload-button">
                                 <ImageIcon />
                             </label>
-                            <input
+                            <input 
                                 type="file"
                                 id="upload-button"
                                 style={{ cursor: 'pointer', display: 'none' }}
@@ -192,7 +192,7 @@ function Feed() {
                                     <div><FavoriteBorderIcon /></div>
                                     <div><FiUpload /></div>
                                     {
-                                        account?<div><DeleteOutlineIcon /></div>:''
+                                        account ? <div><DeleteOutlineIcon /></div> : ''
                                     }
                                 </div>
                             </div>

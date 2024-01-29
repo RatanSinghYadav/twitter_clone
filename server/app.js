@@ -12,7 +12,7 @@ const corsOption = {
     allowedHeaders: ['Content-Type', 'Authorization', 'Set-Cookie']
 }
 
-app.use(cors(corsOption));
+app.use(cors());
 app.use(express.json())
 app.use(cookieParser(""));
 
@@ -21,5 +21,5 @@ app.use(route);
 app.use("/uploads",express.static("./uploads"));
 
 app.listen(8000, () => {
-    console.log("server is running...")
+    console.log("server is running...");
 })

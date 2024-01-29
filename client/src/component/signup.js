@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './style/signup.css';
 import { HiOutlineChatAlt } from 'react-icons/hi';
 import { Link, useNavigate } from 'react-router-dom';
+import { url } from './constent';
 
 function Signup() {
     const [signup, setSignup] = useState({
@@ -23,7 +24,7 @@ function Signup() {
     const signupData = async(e)=>{
         e.preventDefault();
         const {name,email,uname,pass} = signup;
-        const res = await fetch("http://localhost:8000/signup", {
+        const res = await fetch(`${url}/signup`, {
             method: "POST",
             headers: {
                 "Accept": "application/json",

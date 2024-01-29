@@ -5,7 +5,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { LoginContext } from './context/contextProvider';
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer, toast } from 'react-toastify';
-
+import { url } from './constent';
 
 function Login() {
     const [login, setlogin] = useState({
@@ -37,7 +37,7 @@ function Login() {
                     position: "top-center"
                 });
             } else {
-                const res = await fetch("http://localhost:8000/login", {
+                const res = await fetch(`${url}/login`, {
                     method: "POST",
 
                     headers: {

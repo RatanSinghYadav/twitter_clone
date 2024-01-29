@@ -17,7 +17,7 @@ async function Register(req, res) {
             const finaluser = new register({ name, email, uname, pass })
 
             const storedata = await finaluser.save();
-            console.log(storedata);
+            // console.log(storedata);
             res.status(201).json(storedata)
 
         }

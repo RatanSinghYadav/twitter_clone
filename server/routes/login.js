@@ -23,7 +23,7 @@ const Login = async (req,res)=>{
         const match = await bcrypt.compare(String(pass), String(userlogin.pass));
 
 
-        console.log(match);
+        // console.log(match);
 
 
 
@@ -35,7 +35,7 @@ const Login = async (req,res)=>{
         // Genrate JWT Token
 
         const authToken = await userlogin.genAuthtoken();
-        console.log(authToken);
+        // console.log(authToken);
 
         res.cookie("AmazonWeb", authToken, {
             expires: new Date(Date.now() + 900000),
