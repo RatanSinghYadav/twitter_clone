@@ -9,10 +9,10 @@ const corsOption = {
     origin: 'http://localhost:3000', // Replace with your client's origin
     credentials: true, // Allow sending of cookies
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-    allowedHeaders: ['Content-Type', 'Authorization', 'Set-Cookie']
+    allowedHeaders: ['Content-Type', 'Authorization', 'Set-Cookie',]
 }
 
-app.use(cors());
+app.use(cors(corsOption));
 app.use(express.json())
 app.use(cookieParser(""));
 
