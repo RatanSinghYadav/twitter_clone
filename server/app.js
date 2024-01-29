@@ -6,7 +6,7 @@ const cookieParser = require('cookie-parser');
 const app = express();
 
 const corsOption = {
-    origin: 'http://localhost:3000', // Replace with your client's origin
+    origin: 'https://twitter-clone-frontend-8bpi.onrender.com',
     credentials: true, // Allow sending of cookies
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization', 'Set-Cookie',]
